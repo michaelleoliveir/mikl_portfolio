@@ -5,12 +5,12 @@ import LightRays from '../components/LightRays'
 import { useEffect, useState } from 'react'
 
 export default function Home() {
-  const [loaded, setLoaded] = useState(false)
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoaded(true), 600) // meio segundo
+    const timer = setTimeout(() => setLoaded(true), 700)
     return () => clearTimeout(timer)
-  }, [])
+  }, []);
 
   return (
     <div className="relative flex items-center justify-center h-screen">
@@ -20,7 +20,7 @@ export default function Home() {
           raysColor="#c1121f"
           raysSpeed={1.5}
           lightSpread={1}
-          rayLength={5}
+          rayLength={15}
           followMouse={true}
           mouseInfluence={0.1}
           noiseAmount={0.1}
