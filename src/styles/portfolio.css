@@ -1,0 +1,19 @@
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-highlight);
+    border-radius: 50%;
+    animation: pulseDot 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseDot {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.4);
+    }
+}
