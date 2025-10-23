@@ -1,5 +1,5 @@
-import BlurText from "../BlurText.jsx"
-import FadeContent from "../FadeContent.jsx"
+import BlurText from "../library/BlurText.jsx"
+import FadeContent from "../library/FadeContent.jsx"
 import Image from "next/image.js"
 
 import "../../styles/variables.css"
@@ -8,17 +8,6 @@ import "../../styles/portfolio.css"
 const Portfolio = () => {
     return (
         <div className="flex flex-col h-screen w-[90%]">
-
-            {/* top div */}
-            <div className="mt-7 flex flex-row justify-between">
-                <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
-                    <Image src="/icon.png" width={55} height={55} alt={"teste"} />
-                </FadeContent>
-
-                <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
-                    <Image src="/icon.png" width={55} height={55} alt={"teste"} />
-                </FadeContent>
-            </div>
 
             {/* middle div */}
             <div className="flex flex-col justify-center items-center h-screen">

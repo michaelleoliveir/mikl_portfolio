@@ -1,12 +1,12 @@
 "use client"
 
-import Portfolio from '@/components/layout/Portfolio';
+import Introduction from '@/components/layout/Introduction';
 
 export default function Home() {
 
   return (
     <div className="relative flex items-center justify-center h-screen">
-      <Portfolio />
+      <Introduction />
     </div>
   )
 }
