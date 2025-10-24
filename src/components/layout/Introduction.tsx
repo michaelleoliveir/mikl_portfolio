@@ -1,11 +1,9 @@
 import BlurText from "../library/BlurText.jsx"
-import FadeContent from "../library/FadeContent.jsx"
-import Image from "next/image.js"
 
 import "../../styles/variables.css"
-import "../../styles/portfolio.css"
+import "../../styles/introduction.css"
 
-const Portfolio = () => {
+const Introduction = () => {
     return (
         <div className="flex flex-col h-screen w-[90%]">
 
@@ -75,4 +73,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio
+export default Introduction
