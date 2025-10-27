@@ -5,7 +5,7 @@ import "../../styles/introduction.css"
 
 const Introduction = () => {
     return (
-        <div className="flex flex-col h-screen w-[90%]">
+        <div className="flex flex-col h-screen">
 
             {/* middle div */}
             <div className="flex flex-col justify-center items-center h-screen">
