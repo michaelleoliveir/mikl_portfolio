@@ -19,7 +19,7 @@ const Introduction = () => {
                         delay={150}
                         animateBy="words"
                         direction="top"
-                        className="text-8xl text-letter font-instrument font-extrabold -mb-3"
+                        className="text-[6rem] text-letter font-instrument font-extrabold -mb-13"
                         animationFrom={undefined}
                         animationTo={undefined}
                         onAnimationComplete={undefined} />
@@ -28,7 +28,7 @@ const Introduction = () => {
                         delay={150}
                         animateBy="words"
                         direction="top"
-                        className="text-8xl mb-8 text-letter font-instrument font-extrabold"
+                        className="text-[6rem] mb-8 text-letter font-instrument font-extrabold"
                         animationFrom={undefined}
                         animationTo={undefined}
                         onAnimationComplete={undefined} />

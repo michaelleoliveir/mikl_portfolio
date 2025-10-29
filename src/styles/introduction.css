@@ -1,9 +1,18 @@
-.dot {
-    width: 12px;
-    height: 12px;
+.dot,
+.dot-experience {
     background-color: var(--color-highlight);
     border-radius: 50%;
     animation: pulseDot 1.5s ease-in-out infinite;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+}
+
+.dot-experience {
+    width: 9px;
+    height: 9px;
 }
 
 @keyframes pulseDot {
