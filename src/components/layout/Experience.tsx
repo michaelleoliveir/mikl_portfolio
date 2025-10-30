@@ -43,7 +43,7 @@ const Experience = () => {
     ]
 
     return (
-        <div className='w-full mt-10'>
+        <section id='experience' className='w-full mt-20'>
             <div className='flex flex-row items-center'>
                 <div className='w-full'>
                     <BlurText
@@ -70,15 +70,19 @@ const Experience = () => {
                             <h1 className='text-4xl font-bold my-1'>{item.role}</h1>
                             <p className='text-[1.1rem]'>{item.period}</p>
                             <div className='mt-3'>
-                                {item.icon.map((icon) => {
-                                    return <i key={icon.iconName} className='text-3xl text-letter mr-4'><FontAwesomeIcon icon={icon} size='xs' color='#c1121f' /></i>
-                                })}
+                                {item.icon.map((icon) => (
+                                    <FontAwesomeIcon
+                                        key={icon.iconName}
+                                        icon={icon}
+                                        className="text-[#c1121f] text-2xl mr-4"
+                                    />
+                                ))}
                             </div>
                         </div>
                     )
                 })}
             </div>
-        </div>
+        </section>
     )
 }
 

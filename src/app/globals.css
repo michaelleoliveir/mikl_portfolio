@@ -3,6 +3,8 @@
 
 @import 'aos/dist/aos.css';
 
+@import "@fortawesome/fontawesome-svg-core/styles.css";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
