@@ -1,36 +1,38 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import React from 'react';
+
+import Image from "next/image";
 
 const teste = () => {
     const [year, setYear] = React.useState<number>(new Date().getFullYear());
 
     return (
-        <div className='bg-background-footer w-full h-28 mt-10 flex items-center justify-center font-dm-sans'>
-            <div>
-                <div className='flex flex-row justify-between w-full gap-40'>
-                    <a href="mailto:michaelle.oliveira101103@gmail.com" className='flex justify-center items-center gap-2'>
-                        <FontAwesomeIcon icon={faEnvelope} color='#b0b3b3' />
-                        <p className='text-light-letter'>michaelle.oliveira101103@gmail.com</p>
-                    </a>
-
-                    <div className='flex gap-8'>
-                        <a href="https://www.linkedin.com/in/michaelle-oliveira/" target='_blank'>
-                            <FontAwesomeIcon icon={faLinkedin} size='xl' color='#b0b3b3' />
-                        </a>
-                        <a href="https://github.com/michaelleoliveir" target='_blank'>
-                            <FontAwesomeIcon icon={faGithub} size='xl' color='#b0b3b3' />
-                        </a>
-                        <a href="https://www.instagram.com/hi_mikl/" target='_blank'>
-                            <FontAwesomeIcon icon={faInstagram} size='xl' color='#b0b3b3' />
-                        </a>
-                    </div>
+        <footer className='bg-background-footer w-full h-28 mt-10 px-60 flex flex-row items-center justify-between font-dm-sans'>
+            {/* logo and name */}
+            <div className='flex flex-row gap-4'>
+                <div className='flex items-center'>
+                    <Image src='/logo.png' alt="Logo" width={36} height={36} />
                 </div>
-
-                <p className='flex justify-center text-light-letter mt-7 text-sm'>© {year} Michaelle Oliveira. All rights reserved.</p>
+                <div className='text-letter'>
+                    <p>© 2025 Michaelle Oliveira. All rights reserved.</p>
+                    <p className='text-sm'>Build with <FontAwesomeIcon icon={faHeart} color='#c1121f' /></p>
+                </div>
             </div>
-        </div>
+
+            <div className='flex flex-row gap-4'>
+                <a href="https://github.com/michaelleoliveir" target='_blank'>
+                    <FontAwesomeIcon icon={faGithub} color='#c1121f' size='xl' />
+                </a>
+                <a href="https://www.instagram.com/hi_mikl/" target='_blank'>
+                    <FontAwesomeIcon icon={faInstagram} color='#c1121f' size='xl' />
+                </a>
+                <a href="https://www.linkedin.com/in/michaelle-oliveira/" target='_blank'>
+                    <FontAwesomeIcon icon={faLinkedin} color='#c1121f' size='xl' />
+                </a>
+            </div>
+        </footer>
     )
 }
 
