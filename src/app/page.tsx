@@ -3,6 +3,7 @@
 import AboutMe from '@/components/layout/AboutMe';
 import Experience from '@/components/layout/Experience';
 import Introduction from '@/components/layout/Introduction';
+import Projects from '@/components/layout/Projects';
 import Footer from '@/components/ui/Footer';
 import Navbar from '@/components/ui/Navbar';
 
@@ -14,6 +15,7 @@ export default function Home() {
           <Navbar />
           <Introduction />
           <Experience />
+          <Projects />
           {/* <AboutMe /> */}
         </div>
       <Footer />

@@ -61,12 +61,16 @@ const Experience = () => {
                     return (
                         <div className='text-letter font-instrument my-10' key={item.id}>
                             <AosWrapper>
-                                <div className='flex flex-row items-center gap-3 font-dm-sans' data-aos="fade-down" data-aos-duration="1000">
-                                    {item.current && <div className="dot-experience"></div>}
-                                    <p className='text-[1.1rem] font-extrabold'>{item.company}</p>
+                                <div className='flex flex-col font-dm-sans' data-aos="fade-down" data-aos-duration="1000">
+                                    <div className='flex flex-row items-center gap-3'>
+                                        {item.current && <div className="dot-experience"></div>}
+                                        <p className='text-[1.1rem] font-extrabold'>{item.company}</p>
+                                    </div>
+                                    <div>
+                                        <h1 className='text-4xl font-bold my-1'>{item.role}</h1>
+                                    </div>
                                 </div>
                             </AosWrapper>
-                            <h1 className='text-4xl font-bold my-1'>{item.role}</h1>
                             <p className='text-[1.1rem]'>{item.period}</p>
                             <div className='mt-3'>
                                 {item.icon.map((icon) => (
