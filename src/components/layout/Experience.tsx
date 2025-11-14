@@ -1,4 +1,3 @@
-import React from 'react'
 import BlurText from '../library/BlurText'
 import AosWrapper from '../ui/AosWrapper'
 

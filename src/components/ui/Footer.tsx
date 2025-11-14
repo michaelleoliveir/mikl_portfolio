@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import React from 'react';
 
+import React from 'react';
 import Image from "next/image";
 
 const teste = () => {
@@ -16,7 +16,7 @@ const teste = () => {
                     <Image src='/logo.png' alt="Logo" width={36} height={36} />
                 </div>
                 <div className='text-letter'>
-                    <p>© 2025 Michaelle Oliveira. All rights reserved.</p>
+                    <p>© {year} Michaelle Oliveira. All rights reserved.</p>
                     <p className='text-sm'>Build with <FontAwesomeIcon icon={faHeart} color='#c1121f' /></p>
                 </div>
             </div>
