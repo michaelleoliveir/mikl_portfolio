@@ -1,7 +1,7 @@
 import BlurText from '../library/BlurText'
 import AosWrapper from '../ui/AosWrapper'
 
-import { faAngular, faAws, faCss3Alt, faFigma, faHtml5, faReact, faWix } from '@fortawesome/free-brands-svg-icons'
+import { faAngular, faAws, faBootstrap, faCss3Alt, faFigma, faGit, faHtml5, faLaravel, faPhp, faReact, faWix } from '@fortawesome/free-brands-svg-icons'
 import { faMobileScreen, faVial } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -9,22 +9,14 @@ const Experience = () => {
     const experience = [
         {
             id: 1,
-            company: 'FULLDEV',
-            role: 'Desenvolvedora Frontend',
-            period: 'Set/25 - Presente',
-            current: true,
-            icon: [faAngular, faHtml5, faCss3Alt, faFigma]
+            company: 'LACREI SAÚDE',
+            role: 'Desenvolvedora Fullstack',
+            period: 'Mar/25 - Jul/25',
+            current: false,
+            icon: [faReact, faCss3Alt, faHtml5, faVial, faAws]
         },
         {
             id: 2,
-            company: 'PIPOCA ÁGIL',
-            role: 'Desenvolvedora Frontend',
-            period: 'Ago/25 - Presente',
-            current: true,
-            icon: [faReact, faFigma, faMobileScreen]
-        },
-        {
-            id: 3,
             company: 'INNOVA TECH ONE',
             role: 'Desenvolvedora Low-code',
             period: 'Jul/25 - Ago/25',
@@ -32,13 +24,21 @@ const Experience = () => {
             icon: [faWix, faFigma, faCss3Alt, faReact]
         },
         {
+            id: 3,
+            company: 'FULLDEV',
+            role: 'Desenvolvedora Frontend',
+            period: 'Set/25 - Presente',
+            current: true,
+            icon: [faAngular, faHtml5, faCss3Alt, faFigma, faGit]
+        },
+        {
             id: 4,
-            company: 'LACREI SAÚDE',
-            role: 'Desenvolvedora Fullstack',
-            period: 'Mar/25 - Jul/25',
-            current: false,
-            icon: [faReact, faCss3Alt, faHtml5, faVial, faAws]
-        }
+            company: 'REMAN',
+            role: 'Desenvolvedora',
+            period: 'Nov/25 - Presente',
+            current: true,
+            icon: [faLaravel, faPhp, faHtml5, faCss3Alt, faBootstrap]
+        },
     ]
 
     return (
@@ -57,7 +57,7 @@ const Experience = () => {
             </div>
 
             <div className='grid grid-cols-2 gap-10 mt-10'>
-                {experience.map((item) => {
+                {experience.toReversed().map((item) => {
                     return (
                         <div className='text-letter font-instrument my-10' key={item.id}>
                             <AosWrapper>
