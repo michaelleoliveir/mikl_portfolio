@@ -1,4 +1,5 @@
 import BlurText from "../library/BlurText"
+import Project from "../ui/Project"
 
 const Projects = () => {
     return (
@@ -16,8 +17,11 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-2 gap-10 mt-10'>
-                
+            <div className='mt-10'>
+                <Project image="laravel-project.png" title="" />
+                <Project image="union-developers.png" title="" />
+                <Project image="user-management.png" title="" />
+                <Project image="ascone-page.png" title="" />
             </div>
         </section>
     )
