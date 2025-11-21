@@ -8,7 +8,7 @@ interface ProjectProps {
     tags: string[]
 }
 
-const Project: React.FC<ProjectProps> = ({ image, title, link, subtitle }) => {
+const Project: React.FC<ProjectProps> = ({ image, title, link, subtitle, tags }) => {
     return (
         <div className="font-instrument w-full flex flex-col items-center mb-17">
             
@@ -25,9 +25,20 @@ const Project: React.FC<ProjectProps> = ({ image, title, link, subtitle }) => {
                 
             </div>
 
-            <div className="w-[80%]">
-                <h1 className="text-letter text-3xl font-bold">{title}</h1>
-                <p className="text-gray text-[1.1rem]">{subtitle}</p>
+            <div className="w-[80%] flex flex-col">
+                <div className="mb-5 flex flex-wrap flex-row">
+                    {tags.map((tag, index) => {
+                        return (
+                            <span key={index} className="text-neon text-[0.9rem] w-[10%] mr-3 px-3 py-1 text-center rounded-4xl bg-highlight-darker/60">
+                                {tag}
+                            </span>
+                        )
+                    })}
+                </div>
+                <div>
+                    <h1 className="text-letter text-3xl font-bold">{title}</h1>
+                    <p className="text-gray text-[1.1rem]">{subtitle}</p>
+                </div>
             </div>
         </div>
     );
