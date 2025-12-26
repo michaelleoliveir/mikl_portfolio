@@ -1,55 +1,9 @@
+import { experience } from '@/data/experience'
+
 import BlurText from '../library/BlurText'
 import AosWrapper from '../ui/AosWrapper'
 
-import { FaReact, FaCss3Alt, FaHtml5, FaAws, FaGit, FaBootstrap, FaLaravel } from "react-icons/fa";
-import { SiTypescript, SiAngular, SiLaravel, SiPhp, SiFigma, SiWix, SiJavascript, SiTailwindcss } from "react-icons/si";
-import { TbHeart, TbTestPipe } from "react-icons/tb";
-
-
 const Experience = () => {
-    const experience = [
-        {
-            id: 1,
-            company: 'LACREI SAÚDE',
-            role: 'Desenvolvedora Fullstack',
-            period: 'Mar/25 - Jul/25',
-            current: false,
-            icon: [FaReact, FaCss3Alt, FaHtml5, FaAws]
-        },
-        {
-            id: 2,
-            company: 'INNOVA TECH ONE',
-            role: 'Desenvolvedora Low-code',
-            period: 'Jul/25 - Ago/25',
-            current: false,
-            icon: [SiWix, SiFigma, FaCss3Alt, FaReact]
-        },
-        {
-            id: 3,
-            company: 'LUMUS TECH',
-            role: 'Desenvolvedora Frontend',
-            period: 'Nov/25 - Dez/25',
-            current: false,
-            icon: [SiTypescript, SiJavascript, FaReact, SiTailwindcss, FaGit]
-        },
-        {
-            id: 4,
-            company: 'FULLDEV',
-            role: 'Desenvolvedora Frontend',
-            period: 'Set/25 - Presente',
-            current: true,
-            icon: [SiAngular, FaHtml5, FaCss3Alt, SiFigma, FaGit]
-        },
-        {
-            id: 5,
-            company: 'PRONTAX',
-            role: 'Desenvolvedora',
-            period: 'Nov/25 - Presente',
-            current: true,
-            icon: [FaLaravel, SiPhp, FaHtml5, FaCss3Alt, FaBootstrap, SiFigma]
-        },
-    ]
-
     return (
         <section id='experience' className='w-full mt-20'>
             <div className='flex flex-row items-center'>
