@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="relative flex flex-col items-center justify-center">
         <div className='w-[90%]'>
-          <Navbar />
+          <Navbar isContactPage={false} />
           <Introduction />
           <Experience />
           <Projects />
