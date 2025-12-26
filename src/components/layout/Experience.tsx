@@ -1,9 +1,10 @@
 import BlurText from '../library/BlurText'
 import AosWrapper from '../ui/AosWrapper'
 
-import { faAngular, faAws, faBootstrap, faCss3Alt, faFigma, faGit, faHtml5, faLaravel, faPhp, faReact, faWix } from '@fortawesome/free-brands-svg-icons'
-import { faMobileScreen, faVial } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaReact, FaCss3Alt, FaHtml5, FaAws, FaGit, FaBootstrap, FaLaravel } from "react-icons/fa";
+import { SiTypescript, SiAngular, SiLaravel, SiPhp, SiFigma, SiWix, SiJavascript, SiTailwindcss } from "react-icons/si";
+import { TbHeart, TbTestPipe } from "react-icons/tb";
+
 
 const Experience = () => {
     const experience = [
@@ -13,7 +14,7 @@ const Experience = () => {
             role: 'Desenvolvedora Fullstack',
             period: 'Mar/25 - Jul/25',
             current: false,
-            icon: [faReact, faCss3Alt, faHtml5, faVial, faAws]
+            icon: [FaReact, FaCss3Alt, FaHtml5, FaAws]
         },
         {
             id: 2,
@@ -21,23 +22,31 @@ const Experience = () => {
             role: 'Desenvolvedora Low-code',
             period: 'Jul/25 - Ago/25',
             current: false,
-            icon: [faWix, faFigma, faCss3Alt, faReact]
+            icon: [SiWix, SiFigma, FaCss3Alt, FaReact]
         },
         {
             id: 3,
+            company: 'LUMUS TECH',
+            role: 'Desenvolvedora Frontend',
+            period: 'Nov/25 - Dez/25',
+            current: false,
+            icon: [SiTypescript, SiJavascript, FaReact, SiTailwindcss, FaGit]
+        },
+        {
+            id: 4,
             company: 'FULLDEV',
             role: 'Desenvolvedora Frontend',
             period: 'Set/25 - Presente',
             current: true,
-            icon: [faAngular, faHtml5, faCss3Alt, faFigma, faGit]
+            icon: [SiAngular, FaHtml5, FaCss3Alt, SiFigma, FaGit]
         },
         {
-            id: 4,
-            company: 'REMAN',
+            id: 5,
+            company: 'PRONTAX',
             role: 'Desenvolvedora',
             period: 'Nov/25 - Presente',
             current: true,
-            icon: [faLaravel, faPhp, faHtml5, faCss3Alt, faBootstrap]
+            icon: [FaLaravel, SiPhp, FaHtml5, FaCss3Alt, FaBootstrap, SiFigma]
         },
     ]
 
@@ -72,11 +81,10 @@ const Experience = () => {
                                 </div>
                             </AosWrapper>
                             <p className='text-[1.1rem]'>{item.period}</p>
-                            <div className='mt-3'>
-                                {item.icon.map((icon) => (
-                                    <FontAwesomeIcon
-                                        key={icon.iconName}
-                                        icon={icon}
+                            <div className='flex flex-row mt-3'>
+                                {item.icon.map((Icon, index) => (
+                                    <Icon
+                                        key={index}
                                         className="text-[#c1121f] text-2xl mr-4"
                                     />
                                 ))}
