@@ -2,7 +2,7 @@ import BlurText from '../library/BlurText'
 
 const AboutMe = () => {
     return (
-        <div className='flex flex-col w-full mt-40'>
+        <div id='about' className='flex flex-col w-full mt-40'>
 
             {/* about me */}
             <div className='flex flex-row items-center'>

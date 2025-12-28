@@ -17,13 +17,15 @@ const Navbar = ({ isContactPage = false }: NavbarProps) => {
         <nav className="fixed top-0 left-1/2 -translate-x-1/2 z-50 mt-7 h-14 w-[90%] max-w-[450px] flex items-center justify-center rounded-full bg-highlight/20 backdrop-blur-lg border-2 border-highlight/10">
             <div className="flex items-center gap-6">
                 {navItems.map((item) => (
-                    <a
+                    <Link
                         key={item.id}
-                        href={`#${item.id}`}
+                        // Lógica: se estiver na página de contato, o link deve ser "/#id"
+                        // se estiver na home, pode ser apenas "#id"
+                        href={isContactPage ? `/#${item.id}` : `#${item.id}`}
                         className={linkStyle}
                     >
                         {item.label}
-                    </a>
+                    </Link>
                 ))}
                 {isContactPage ? (
                     <Link href="/" className={linkStyle}>
