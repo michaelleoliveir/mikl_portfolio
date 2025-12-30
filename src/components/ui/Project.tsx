@@ -3,20 +3,14 @@ import Link from "next/link";
 import Image from 'next/image'
 
 import { FaGithub } from "react-icons/fa";
+import { Items } from "@/data/projects";
+import { PiStarFourFill } from "react-icons/pi";
 
-interface ProjectProps {
-    image: string;
-    title: string;
-    subtitle: string;
-    link: string;
-    tags: React.ReactNode[]
-}
-
-const Project: React.FC<ProjectProps> = ({ image, title, link, subtitle, tags }) => {
+const Project: React.FC<Items> = ({ image, title, link, features, subtitle, tags }) => {
     return (
         <div className="font-instrument w-full flex flex-row justify-center items-center mb-17 gap-10">
 
-            <div className="relative shrink-0 overflow-hidden w-[600px] h-[350px] rounded-[2.5rem] group border border-white/5 shadow-2xl">
+            <div className="relative shrink-0 overflow-hidden w-[600px] h-[400px] rounded-[2.5rem] group border border-white/5 shadow-2xl">
                 <Image
                     src={`/${image}`}
                     alt={title}
@@ -38,7 +32,15 @@ const Project: React.FC<ProjectProps> = ({ image, title, link, subtitle, tags })
                     <p className="mt-2 text-gray text-[1.1rem]">{subtitle}</p>
                 </div>
 
-                <div className="mb-5 flex flex-wrap flex-row">
+                <div className="flex flex-col gap-2 my-2">
+                    {features.map((feature, index) => (
+                        <span key={index} className="text-letter/70 text-[0.95rem] flex items-start gap-2">
+                            <span className="text-highlight ml-6"><PiStarFourFill/></span> {feature}
+                        </span>
+                    ))}
+                </div>
+
+                <div className="mb-5 flex flex-wrap flex-row ml-6">
                     {tags.map((tag, index) => {
                         return (
                             <span key={index} className="w-[6.5%] mr-4 p-3 text-center rounded-4xl border border-gray/40 bg-gray/30">
