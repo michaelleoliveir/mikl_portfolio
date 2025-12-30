@@ -1,10 +1,12 @@
+import { iconLibrary } from "./iconLibrary"
+
 interface Items {
     id: number,
     image: string,
     title: string,
     link: string,
     subtitle: string,
-    tags: string[]
+    tags: React.ReactNode[]
 }
 
 export const items: Items[] = [
@@ -14,7 +16,7 @@ export const items: Items[] = [
         title: "CRUD Laravel",
         link: "https://github.com/michaelleoliveir/crud-laravel",
         subtitle: "Aplicação CRUD desenvolvida em Laravel, permitindo criar, visualizar, editar, deletar e pesquisar publicações por meio de uma interface simples e intuitiva.",
-        tags: ['Laravel', 'PHP', 'Blade', 'HTML', 'CSS', 'Bootstrap']
+        tags: [iconLibrary.laravel, iconLibrary.php, iconLibrary.html, iconLibrary.css, iconLibrary.bootstrap]
     },
     {
         id: 2,
@@ -22,7 +24,7 @@ export const items: Items[] = [
         title: "Union Developers Clone",
         link: "https://github.com/michaelleoliveir/uniondevelopers-clone",
         subtitle: "Clone do site da Union Developers, reproduzido com foco em layout, responsividade e fidelidade visual ao original.",
-        tags: ['NextJS', 'TypeScript', 'Tailwind', 'Lucide', 'Zod']
+        tags: [iconLibrary.nextjs, iconLibrary.typescript, iconLibrary.tailwind, iconLibrary.zod]
     },
     {
         id: 3,
@@ -30,7 +32,7 @@ export const items: Items[] = [
         title: "User Management",
         link: "https://github.com/michaelleoliveir/user-management",
         subtitle: "Sistema de gerenciamento de usuários para registrar, atualizar e excluir usuários. Este projeto é ideal para quem busca implementar funcionalidades básicas de CRUD (Create, Read, Update, Delete) em uma aplicação web.",
-        tags: ['React', 'JavaScript', 'Shadcn', 'Express', 'MongoDB', 'Cypress', 'Jest']
+        tags: [iconLibrary.react, iconLibrary.express, iconLibrary.mongodb, iconLibrary.cypress, iconLibrary.jest]
     },
     {
         id: 4,
@@ -38,6 +40,6 @@ export const items: Items[] = [
         title: "Ascone Landing Page",
         link: "https://github.com/michaelleoliveir/ascone-landing-page",
         subtitle: "Clone da landing page da Ascone Finance, seguindo fielmente o conceito visual encontrado no Dribbble e mantendo a estrutura, identidade e proposta original do design.",
-        tags: ['React', 'JavaScript', 'Tailwind', 'Shadcn']
+        tags: [iconLibrary.react, iconLibrary.tailwind, iconLibrary.shadcn]
     }
 ]

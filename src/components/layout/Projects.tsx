@@ -1,4 +1,5 @@
 import { items } from "@/data/projects"
+
 import BlurText from "../library/BlurText"
 import Project from "../ui/Project"
 

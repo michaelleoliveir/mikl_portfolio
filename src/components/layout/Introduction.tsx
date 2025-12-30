@@ -16,7 +16,7 @@ const Introduction = () => {
                 <div className="flex flex-col items-center">
                     <BlurText
                         text="MICHAELLE"
-                        delay={150}
+                        delay={100}
                         animateBy="words"
                         direction="top"
                         className="text-[6rem] text-letter font-instrument font-extrabold -mb-13"
@@ -25,7 +25,7 @@ const Introduction = () => {
                         onAnimationComplete={undefined} />
                     <BlurText
                         text="OLIVEIRA"
-                        delay={150}
+                        delay={110}
                         animateBy="words"
                         direction="top"
                         className="text-[6rem] mb-8 text-letter font-instrument font-extrabold"
@@ -39,7 +39,7 @@ const Introduction = () => {
             <div className="flex flex-row justify-between">
                 <BlurText
                     text="DESENVOLVEDORA"
-                    delay={150}
+                    delay={100}
                     animateBy="words"
                     direction="top"
                     className="text-[1.2rem] mb-8 text-letter font-instrument font-normal"
@@ -49,7 +49,7 @@ const Introduction = () => {
                 <div className="flex flex-row">
                     <BlurText
                         text="FRONTEND"
-                        delay={150}
+                        delay={100}
                         animateBy="words"
                         direction="top"
                         className="text-[1.2rem] mb-8 text-letter font-instrument font-normal"
@@ -59,7 +59,7 @@ const Introduction = () => {
 
                     <BlurText
                         text=" + FULLSTACK"
-                        delay={150}
+                        delay={100}
                         animateBy="words"
                         direction="top"
                         className="text-[1.2rem] mb-8 text-highlight font-instrument font-bold"
