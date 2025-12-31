@@ -23,7 +23,7 @@ export const items: Items[] = [
             'Proteção nativa contra ataques CSRF e validação de formulários.'
         ],
         subtitle: "Aplicação CRUD desenvolvida em Laravel, permitindo criar, visualizar, editar, deletar e pesquisar publicações por meio de uma interface simples e intuitiva.",
-        tags: [iconLibrary.laravel, iconLibrary.php, iconLibrary.html, iconLibrary.css, iconLibrary.bootstrap]
+        tags: [iconLibrary.Laravel, iconLibrary.PHP, iconLibrary.HTML, iconLibrary.CSS, iconLibrary.Bootstrap]
     },
     {
         id: 2,
@@ -37,7 +37,7 @@ export const items: Items[] = [
             'Implementação do componente next/image para carregamento otimizado de imagens.'
         ],
         subtitle: "Clone do site da Union Developers, reproduzido com foco em layout, responsividade e fidelidade visual ao original.",
-        tags: [iconLibrary.nextjs, iconLibrary.typescript, iconLibrary.tailwind, iconLibrary.zod]
+        tags: [iconLibrary.NextJS, iconLibrary.TypeScript, iconLibrary.Tailwind, iconLibrary.Zod]
     },
     {
         id: 3,
@@ -50,7 +50,7 @@ export const items: Items[] = [
             'API RESTful com Express.js para operações CRUD.',
         ],
         subtitle: "Sistema de gerenciamento de usuários para registrar, atualizar e excluir usuários. Este projeto é ideal para quem busca implementar funcionalidades básicas de CRUD (Create, Read, Update, Delete) em uma aplicação web.",
-        tags: [iconLibrary.react, iconLibrary.express, iconLibrary.mongodb, iconLibrary.cypress, iconLibrary.jest]
+        tags: [iconLibrary.React, iconLibrary.Express, iconLibrary.MongoDB, iconLibrary.Cypress, iconLibrary.Jest]
     },
     {
         id: 4,
@@ -63,6 +63,6 @@ export const items: Items[] = [
             'Divisão da página em seções e componentes independentes'
         ],
         subtitle: "Clone da landing page da Ascone Finance, seguindo fielmente o conceito visual encontrado no Dribbble e mantendo a estrutura, identidade e proposta original do design.",
-        tags: [iconLibrary.react, iconLibrary.tailwind, iconLibrary.shadcn]
+        tags: [iconLibrary.React, iconLibrary.Tailwind, iconLibrary.Shadcn]
     }
 ]
