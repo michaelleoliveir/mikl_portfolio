@@ -6,7 +6,7 @@ const Stack = () => {
     const icons = Object.entries(iconLibrary);
 
     return (
-        <div className='flex flex-col items-center mt-28'>
+        <div className='flex flex-col items-center mt-28 mb-15'>
             <div className='w-full'>
                 <BlurText
                     text='STACK'

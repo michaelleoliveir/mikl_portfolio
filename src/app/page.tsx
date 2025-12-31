@@ -15,10 +15,10 @@ export default function Home() {
       <div className='w-[90%]'>
         <Navbar isContactPage={false} />
         <Introduction />
+        <AboutMe />
         <Experience />
         <Projects />
         <Stack />
-        <AboutMe />
       </div>
       <Footer />
     </div>
