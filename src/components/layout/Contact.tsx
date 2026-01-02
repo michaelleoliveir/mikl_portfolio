@@ -96,11 +96,11 @@ const ContactForm = () => {
                     </div>
                     <div className='mt-6'>
                         {isSubmitting ? (
-                            <div className='flex justify-center p-2 rounded-xl text-letter items-center w-full bg-linear-to-tr from-zinc-600 to-stone-900'>
-                                <Spinner className="size-6" />
+                            <div className='flex justify-center w-full font-dm-sans py-3 rounded-full items-center bg-linear-to-tr from-zinc-600 to-stone-900'>
+                                <Spinner className="size-6 text-letter" />
                             </div>
                         ) : (
-                            <button type="submit" className='cursor-pointer w-full p-2 rounded-xl bg-linear-to-tr from-highlight-darker to-red-700 text-letter'>Enviar mensagem</button>
+                            <button type="submit" className='w-full font-dm-sans py-3 rounded-full bg-highlight-darker text-white transition-all hover:shadow-[0_0_25px_rgba(66,00,00,1.3)]'>Enviar mensagem</button>
                         )}
                     </div>
                 </form>
