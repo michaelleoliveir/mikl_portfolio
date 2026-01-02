@@ -8,7 +8,7 @@ const Introduction = () => {
         <div className="flex flex-col h-screen">
 
             {/* middle div */}
-            <div className="flex flex-col justify-center items-center h-screen">
+            <div className="flex flex-col justify-center items-center h-screen mt-12 md:mt-0">
                 <div className="flex flex-row items-center justify-center mb-3 gap-3">
                     <div className="dot"></div>
                     <p className="text-1xl text-gray font-medium font-instrument">DISPONÍVEL PARA TRABALHO</p>
@@ -19,7 +19,7 @@ const Introduction = () => {
                         delay={100}
                         animateBy="words"
                         direction="top"
-                        className="text-[6rem] text-letter font-instrument font-extrabold -mb-13"
+                        className="text-[3.3rem] md:text-[6rem] text-letter font-instrument font-extrabold -mb-6 md:-mb-13"
                         animationFrom={undefined}
                         animationTo={undefined}
                         onAnimationComplete={undefined} />
@@ -28,7 +28,7 @@ const Introduction = () => {
                         delay={110}
                         animateBy="words"
                         direction="top"
-                        className="text-[6rem] mb-8 text-letter font-instrument font-extrabold"
+                        className="text-[3.3rem] md:text-[6rem] mb-8 text-letter font-instrument font-extrabold"
                         animationFrom={undefined}
                         animationTo={undefined}
                         onAnimationComplete={undefined} />
@@ -36,13 +36,13 @@ const Introduction = () => {
             </div>
 
             {/* bottom div */}
-            <div className="flex flex-row justify-between">
+            <div className="flex flex-col md:flex-row justify-between">
                 <BlurText
                     text="DESENVOLVEDORA"
                     delay={100}
                     animateBy="words"
                     direction="top"
-                    className="text-[1.2rem] mb-8 text-letter font-instrument font-normal"
+                    className="text-[1.2rem] md:mb-8 text-letter font-instrument font-normal"
                     animationFrom={undefined}
                     animationTo={undefined}
                     onAnimationComplete={undefined} />

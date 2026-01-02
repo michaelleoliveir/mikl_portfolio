@@ -14,11 +14,11 @@ const Navbar = ({ isContactPage = false }: NavbarProps) => {
         { id: '/contact', label: 'CONTATO' }
     ];
 
-    const linkStyle = "relative cursor-pointer font-instrument text-letter text-sm";
+    const linkStyle = "relative cursor-pointer font-instrument text-letter text-[0.7rem] md:text-sm";
 
     return (
-        <nav className="fixed top-0 left-1/2 -translate-x-1/2 z-50 mt-7 h-14 px-14 max-w-[450px] flex items-center justify-center rounded-full bg-highlight/20 backdrop-blur-lg border-2 border-highlight/10">
-            <div className="flex items-center gap-6">
+        <nav className="fixed top-0 left-1/2 -translate-x-1/2 z-50 mt-7 h-14 px-14 max-w-[310px] md:max-w-[450px] flex items-center justify-center rounded-full bg-highlight/20 backdrop-blur-lg border-2 border-highlight/10">
+            <div className="flex items-center gap-3 md:gap-6">
                 {isContactPage ? (
                     <Link href="/" className={linkStyle + " flex flex-row items-center gap-6"}>
                         <MdArrowBackIosNew className="text-letter" />
