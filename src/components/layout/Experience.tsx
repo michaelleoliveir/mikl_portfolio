@@ -15,11 +15,11 @@ const Experience = () => {
                         animationFrom={undefined}
                         animationTo={undefined}
                         onAnimationComplete={undefined}
-                        className='text-[6rem] text-letter font-instrument text-left font-extrabold' />
+                        className='text-[3.2rem] md:text-[6rem] leading-none md:leading-22 text-letter font-instrument text-left font-extrabold' />
                 </div>
             </div>
 
-            <div className='grid grid-cols-2 gap-10 mt-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 mt-10'>
                 {experience.toReversed().map((item) => {
                     return (
                         <div className='text-letter font-instrument my-10' key={item.id}>
