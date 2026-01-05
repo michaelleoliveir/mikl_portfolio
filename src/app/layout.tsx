@@ -1,6 +1,8 @@
 import "./globals.css";
 import "../styles/variables.css"
 
+import { Toaster } from "@/components/library/sonner";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -8,8 +10,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-background h-screen overflow-hidden">
+      <body className="bg-background scroll-smooth">
         {children}
+        <Toaster />
       </body>
     </html>
   );

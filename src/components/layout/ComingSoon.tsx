@@ -1,7 +1,7 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import '../../styles/variables.css'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import '../../styles/variables.css'
 
 const ComingSoon = () => {
     return (

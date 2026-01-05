@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 @import 'tailwindcss';
 
 @theme {
-    --color-background: #060010;
+    --color-background: #131515;
+    --color-background-footer: #161616;
     --color-letter: #fefefd;
+    --color-light-letter: #b0b3b3;
     --color-highlight: #c1121f;
+    --color-neon: #ff002b;
+    --color-highlight-darker: #660000;
+    --color-gray: #6c757d;
 
-    --font-funnel: "Funnel Display", sans-serif
+    --font-funnel: "Funnel Display", sans-serif;
+    --font-instrument: "Instrument Sans", sans-serif;
+    --font-dm-sans: "DM Sans", sans-serif;
 }

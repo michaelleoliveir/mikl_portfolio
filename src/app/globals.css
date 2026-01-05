@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@import 'aos/dist/aos.css';
+
+@import "@fortawesome/fontawesome-svg-core/styles.css";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -119,4 +123,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
