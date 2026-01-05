@@ -19,7 +19,7 @@ const Experience = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 mt-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10 mt-6 md:mt-10'>
                 {experience.toReversed().map((item) => {
                     return (
                         <div className='text-letter font-instrument my-10' key={item.id}>
@@ -27,14 +27,14 @@ const Experience = () => {
                                 <div className='flex flex-col font-dm-sans' data-aos="fade-down" data-aos-duration="1000">
                                     <div className='flex flex-row items-center gap-3'>
                                         {item.current && <div className="dot-experience"></div>}
-                                        <p className='text-[1.1rem] font-extrabold'>{item.company}</p>
+                                        <p className='text-[0.9rem] md:text-[1.1rem] font-extrabold'>{item.company}</p>
                                     </div>
                                     <div>
-                                        <h1 className='text-4xl font-bold my-1'>{item.role}</h1>
+                                        <h1 className='text-2xl md:text-4xl font-bold my-1'>{item.role}</h1>
                                     </div>
                                 </div>
                             </AosWrapper>
-                            <p className='text-[1.1rem]'>{item.period}</p>
+                            <p className='text-[0.9rem] md:text-[1.1rem]'>{item.period}</p>
                             <div className='flex flex-row mt-3'>
                                 {item.icon.map((Icon, index) => (
                                     <Icon

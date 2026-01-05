@@ -15,11 +15,11 @@ const Projects = () => {
                         animationFrom={undefined}
                         animationTo={undefined}
                         onAnimationComplete={undefined}
-                        className='text-[6rem] text-letter font-instrument text-left font-extrabold' />
+                        className='text-[3.2rem] md:text-[6rem] leading-none md:leading-22 text-letter font-instrument text-left font-extrabold' />
                 </div>
             </div>
 
-            <div className='mt-10'>
+            <div className='mt-6 md:mt-10'>
                 {items.map((item) => {
                     return (
                         <Project key={item.id} image={item.image} title={item.title} subtitle={item.subtitle} link={item.link} tags={item.tags} id={0} features={item.features}/>
