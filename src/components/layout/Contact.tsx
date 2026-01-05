@@ -80,7 +80,7 @@ const ContactForm = () => {
                                 {errors.subject && <span className='text-sm text-highlight/80'>{errors.subject.message}</span>}
                             </div>
                         </div>
-                        <div className='flex flex-col md:flex-row gap-6'>
+                        <div className='flex flex-col gap-6'>
                             <div className='flex flex-col text-left w-full gap-2'>
                                 <div className='w-full flex flex-col text-left   gap-2'>
                                     <label className='text-letter' htmlFor="email">Email</label>
