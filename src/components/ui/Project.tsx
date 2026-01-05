@@ -24,12 +24,12 @@ const Project: React.FC<Items> = ({ image, title, link, features, subtitle, tags
             <div className="px-4 md:px-0 flex flex-col gap-3 md:gap-5">
                 <div>
                     <div className="flex flex-row items-center gap-5">
-                        <h1 className="text-letter text-2xl md:text-4xl font-bold">{title}</h1>
+                        <h1 className="text-letter text-2xl md:text-3xl font-bold">{title}</h1>
                         <Link href={link} target="_blank">
                             <FaGithub className="text-letter" size={25} />
                         </Link>
                     </div>
-                    <p className="mt-2 text-gray text-[1rem] md:text-[1.2rem]">{subtitle}</p>
+                    <p className="mt-2 text-gray text-[1rem] md:text-[1.1rem]">{subtitle}</p>
                 </div>
 
                 <div className="flex flex-col gap-3 my-2">
