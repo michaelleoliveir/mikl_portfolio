@@ -9,7 +9,7 @@ const teste = () => {
     const [year, setYear] = React.useState<number>(new Date().getFullYear());
 
     return (
-        <footer className='bg-background-footer w-full py-8 md:h-28 mt-10 px-0 md:px-60 flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 md:gap-0 font-dm-sans'>
+        <footer className='bg-background-footer w-full py-8 md:h-28 mt-2 md:mt-10 px-0 md:px-60 flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 md:gap-0 font-dm-sans'>
             {/* logo and name */}
             <div className='flex flex-col md:flex-row items-center gap-4 text-center md:text-left'>
                 <div className='shrink-0'>

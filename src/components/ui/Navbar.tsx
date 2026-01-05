@@ -17,7 +17,11 @@ const Navbar = ({ isContactPage = false }: NavbarProps) => {
     const linkStyle = "relative cursor-pointer font-instrument text-letter text-[0.7rem] md:text-sm";
 
     return (
-        <nav className="fixed top-0 left-1/2 -translate-x-1/2 z-50 mt-7 h-14 px-14 max-w-[310px] md:max-w-[450px] flex items-center justify-center rounded-full bg-highlight/20 backdrop-blur-lg border-2 border-highlight/10">
+        <nav className={`fixed top-0 left-1/2 -translate-x-1/2 z-50 mt-7 h-14 flex items-center justify-center rounded-full bg-highlight/20 backdrop-blur-lg border-2 border-highlight/10 transition-all duration-300 ${isContactPage
+                ? 'max-w-[310px] px-5'
+                : 'max-w-[550px] px-20'
+            }`}
+        >
             <div className="flex items-center gap-3 md:gap-6">
                 {isContactPage ? (
                     <Link href="/" className={linkStyle + " flex flex-row items-center gap-6"}>
