@@ -65,7 +65,7 @@ const ContactForm = () => {
                 <p className='max-w-2xl text-letter/60 text-[1rem] md:text-lg'>Fique à vontade para entrar em contato. Estou aberta a novas oportunidades, projetos e colaborações.</p>
             </div>
 
-            <div className='w-3/4 md:w-2/4 mt-7'>
+            <div className='w-[85%] md:w-2/4 mt-7'>
                 <form ref={form} onSubmit={handleSubmit(onSubmit)}>
                     <div className='flex flex-col gap-6'>
                         <div className='flex flex-col md:flex-row gap-6'>
