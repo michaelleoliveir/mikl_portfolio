@@ -8,9 +8,9 @@ interface NavbarProps {
 
 const Navbar = ({ isContactPage = false }: NavbarProps) => {
     const navItems = [
+        { id: '#about', label: 'SOBRE' },
         { id: '#experience', label: 'EXPERIÊNCIA' },
         { id: '#projects', label: 'PROJETOS' },
-        { id: '#about', label: 'SOBRE' },
         { id: '/contact', label: 'CONTATO' }
     ];
 
