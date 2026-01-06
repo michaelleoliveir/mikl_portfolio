@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 MIKL's Portfolio
 
-## Getting Started
+Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar meus projetos, habilidades e trajetória como desenvolvedor. O objetivo principal é servir como um cartão de visitas técnico, focado em performance e experiência do usuário.
+## 🛠️ Tecnologias Utilizadas
+O projeto foi construído utilizando as melhores práticas do ecossistema React/Next.js:
 
-First, run the development server:
+- Next.js (App Router) - Framework React para produção.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- React - Biblioteca para interfaces de usuário.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- TypeScript - Tipagem estática para maior segurança e produtividade.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Tailwind CSS - Estilização baseada em classes utilitárias.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Lucide React / Framer Motion - Para ícones e animações fluidas.
 
-## Learn More
+## ✨ Funcionalidades
 
-To learn more about Next.js, take a look at the following resources:
+**Design Responsivo:** Interface totalmente adaptada para dispositivos móveis, tablets e desktops.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Arquitetura Híbrida:** Uso otimizado de *Server Components* para performance e *Client Components* para interatividade.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Dark/Light Mode:** Suporte a temas claro e escuro integrado.
 
-## Deploy on Vercel
+**SEO Otimizado:** Configuração de Meta Tags para melhor indexação em motores de busca (Google).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Animações Fluidas:** Transições suaves utilizando Framer Motion para uma melhor experiência do usuário (UX).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Seção de Projetos:** Listagem detalhada com links para repositórios e demos ao vivo.
+
+**Performance:** Carregamento rápido e otimização de imagens através do `next/image`.
+## 🚀 Como rodar o projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/michaelleoliveir/mikl_portfolio.git
+   ```
+
+2. Entre na pasta do projeto:
+    ```bash
+    cd mikl_portfolio
+   ```
+
+3. Instale as dependências e inicie o servidor:
+    ```bash
+    npm install
+    npm run dev
+    ```
+
