@@ -19,7 +19,7 @@ const ContactForm = () => {
     const onSubmit = async (data: ContactValues) => {
         const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID!;
         const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID!;
-        const myPublicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+        const myPublicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY!;
 
         try {
             await emailjs.sendForm(

@@ -14,11 +14,11 @@ const Navbar = ({ isContactPage = false }: NavbarProps) => {
         { id: '/contact', label: 'CONTATO' }
     ];
 
-    const linkStyle = "relative cursor-pointer font-instrument text-letter text-[0.7rem] md:text-sm";
+    const linkStyle = "relative cursor-pointer font-instrument text-letter text-[0.7rem] md:text-sm transition-all active:scale-95 active:text-highlight active:duration-75";
 
     return (
         <nav className={`fixed top-0 left-1/2 -translate-x-1/2 z-50 mt-7 h-14 flex items-center justify-center rounded-full bg-highlight/20 backdrop-blur-lg border-2 border-highlight/10 transition-all duration-300 ${isContactPage
-                ? 'max-w-[310px] px-9'
+                ? 'max-w-[550px] px-9'
                 : 'max-w-[550px] px-8 md:px-20'
             }`}
         >

@@ -8,7 +8,7 @@ import { PiStarFourFill } from "react-icons/pi";
 
 const Project: React.FC<Items> = ({ image, title, link, features, subtitle, tags }) => {
     return (
-        <div className="font-instrument w-full flex flex-col md:flex-row justify-center items-center mb-17 gap-10">
+        <div className="font-instrument w-full flex flex-col md:flex-row justify-center items-center mb-17 gap-4 md:gap-10">
 
             <div className="relative shrink-0 overflow-hidden w-full max-w-[90%] md:w-[600px] aspect-4/3 h-[250px] md:h-[400px] rounded-4xl md:rounded-[2.5rem] group border border-white/5 shadow-2xl mx-auto">
                 <Image
@@ -43,7 +43,7 @@ const Project: React.FC<Items> = ({ image, title, link, features, subtitle, tags
                 <div className="mb-5 flex flex-wrap flex-row ml-6">
                     {tags.map((tag, index) => {
                         return (
-                            <span key={index} className="w-11 md:w-[6.5%] mr-4 p-2 md:p-3 text-center rounded-4xl border border-gray/40 bg-gray/30">
+                            <span key={index} className="w-9 md:w-[6.5%] mr-4 p-2 md:p-3 text-center rounded-4xl border border-gray/40 bg-gray/30">
                                 {tag}
                             </span>
                         )
