@@ -10,7 +10,7 @@ const Stack = () => {
             <div className='w-full'>
                 <BlurText
                     text='STACK'
-                    delay={150}
+                    delay={100}
                     direction='top'
                     animationFrom={undefined}
                     animationTo={undefined}

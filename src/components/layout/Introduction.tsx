@@ -7,7 +7,6 @@ const Introduction = () => {
     return (
         <div className="flex flex-col h-screen">
 
-            {/* middle div */}
             <div className="flex flex-col justify-center items-center h-screen mt-12 md:mt-0">
                 <div className="flex flex-row items-center justify-center mb-3 gap-3">
                     <div className="dot"></div>
@@ -35,7 +34,6 @@ const Introduction = () => {
                 </div>
             </div>
 
-            {/* bottom div */}
             <div className="flex flex-col md:flex-row justify-between">
                 <BlurText
                     text="DESENVOLVEDORA"
@@ -68,7 +66,6 @@ const Introduction = () => {
                         onAnimationComplete={undefined} />
                 </div>
             </div>
-
         </div>
     )
 }

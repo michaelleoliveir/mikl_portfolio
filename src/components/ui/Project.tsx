@@ -3,8 +3,9 @@ import Link from "next/link";
 import Image from 'next/image'
 
 import { FaGithub } from "react-icons/fa";
-import { Items } from "@/data/projects";
 import { PiStarFourFill } from "react-icons/pi";
+
+import { Items } from "@/data/projects";
 
 const Project: React.FC<Items> = ({ image, title, link, features, subtitle, tags }) => {
     return (
@@ -35,12 +36,12 @@ const Project: React.FC<Items> = ({ image, title, link, features, subtitle, tags
                 <div className="flex flex-col gap-3 my-2">
                     {features.map((feature, index) => (
                         <span key={index} className="text-letter/70 text-[0.9rem] md:text-[1rem] flex items-start gap-2">
-                            <span className="text-highlight ml-6"><PiStarFourFill/></span> {feature}
+                            <span className="text-highlight ml-0 md:ml-6"><PiStarFourFill/></span> {feature}
                         </span>
                     ))}
                 </div>
 
-                <div className="mb-5 flex flex-wrap flex-row ml-6">
+                <div className="mb-5 flex flex-wrap flex-row ml-0 md:ml-6">
                     {tags.map((tag, index) => {
                         return (
                             <span key={index} className="w-9 md:w-[6.5%] mr-4 p-2 md:p-3 text-center rounded-4xl border border-gray/40 bg-gray/30">

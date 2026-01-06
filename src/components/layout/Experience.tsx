@@ -7,7 +7,7 @@ const Experience = () => {
     return (
         <section id='experience' className='w-full mt-20'>
             <div className='flex flex-row items-center'>
-                <div className='w-full'>
+                <div>
                     <BlurText
                         text='MINHA EXPERIÊNCIA'
                         delay={150}

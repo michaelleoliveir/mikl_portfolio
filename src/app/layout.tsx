@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`bg-background scroll-smooth ${funnel.variable} ${instrument.variable} ${dmSans.variable}`}>
+      <body className={`bg-background ${funnel.variable} ${instrument.variable} ${dmSans.variable}`}>
         {children}
         <Toaster />
       </body>

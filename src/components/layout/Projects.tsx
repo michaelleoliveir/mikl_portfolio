@@ -7,7 +7,7 @@ const Projects = () => {
     return (
         <section id='projects' className='w-full mt-20'>
             <div className='flex flex-row items-center'>
-                <div className='w-full'>
+                <div>
                     <BlurText
                         text='PROJETOS'
                         delay={150}
@@ -22,7 +22,7 @@ const Projects = () => {
             <div className='mt-6 md:mt-10'>
                 {items.map((item) => {
                     return (
-                        <Project key={item.id} image={item.image} title={item.title} subtitle={item.subtitle} link={item.link} tags={item.tags} id={0} features={item.features}/>
+                        <Project key={item.id} image={item.image} title={item.title} subtitle={item.subtitle} link={item.link} tags={item.tags} id={item.id} features={item.features}/>
                     )
                 })}
             </div>

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import AosWrapper from '../ui/AosWrapper'
+
 import { FaArrowRight } from 'react-icons/fa'
 import { MdDownload } from 'react-icons/md'
 
@@ -9,7 +10,7 @@ const AboutMe = () => {
     return (
         <AosWrapper>
             <div id='about' className='flex flex-col w-full mt-6 md:mt-20'>
-                {/* about me */}
+
                 <div className='flex flex-col md:flex-row justify-center items-center gap-20 md:gap-30 mt-30 mb-25' data-aos="fade-down" data-aos-delay={90} data-aos-duration="800">
                     <div className='relative shrink-0 flex items-center justify-center'>
                         <div className="absolute w-[120%] h-[120%] border-t-2 border-l-2 border-red-400/20 rounded-full animate-spin [animation-duration:8s]"></div>
@@ -41,18 +42,18 @@ const AboutMe = () => {
 
                     <div className='w-[80%] md:w-[50%] flex flex-col'>
                         <div data-aos="fade-down" data-aos-delay={100} data-aos-duration="800">
-                            <p className='text-center md:text-justify text-letter text-[1rem] md:text-[1.2rem] font-dm-sans'>Sou Michaelle Oliveira, <span className='text-highlight'>tecnóloga</span> em Análise e Desenvolvimento de Sistemas e desenvolvedora <span className='text-highlight'>Fullstack</span> com foco em front-end. Atualmente, curso <span className='text-highlight'>pós-graduação</span> em Desenvolvimento Full Stack pela PUC Minas e atuo como desenvolvedora na Prontax e Fulldev, colaborando em projetos que unem design, performance e propósito. Busco sempre aprender, criar e evoluir para <span className='text-highlight'>entregar soluções</span> que realmente façam diferença.</p>
+                            <p className='text-center justify-evenly md:text-start text-letter text-[1rem] md:text-[1.2rem] font-dm-sans'>Sou Michaelle Oliveira, <span className='text-highlight'>tecnóloga</span> em Análise e Desenvolvimento de Sistemas e desenvolvedora <span className='text-highlight'>Fullstack</span> com foco em front-end. Atualmente, curso <span className='text-highlight'>pós-graduação</span> em Desenvolvimento Full Stack pela PUC Minas e atuo como desenvolvedora na Prontax e Fulldev, colaborando em projetos que unem design, performance e propósito. Busco sempre aprender, criar e evoluir para <span className='text-highlight'>entregar soluções</span> que realmente façam diferença.</p>
                         </div>
 
-                        <div className='w-full mt-5 flex flex-col md:flex-row items-center md:justify-start gap-2 md:gap-4'>
-                            <button className='w-full max-w-64 md:w-auto justify-center text-[0.7rem] md:text-[1rem] font-dm-sans pr-5 pl-2 py-2 bg-highlight-darker rounded-full flex items-center gap-3 text-white transition-all hover:shadow-[0_0_25px_rgba(66,00,00,1.3)]'>
-                                <span className='bg-white text-highlight-darker rounded-full w-7 md:w-8 h-7 md:h-8 flex items-center justify-center'><MdDownload size={18} /></span>
+                        <div className='mt-5 flex flex-col md:flex-row items-center md:justify-start gap-2 md:gap-4'>
+                            <button className='w-full max-w-64 md:w-auto justify-center text-[0.7rem] md:text-[1rem] font-dm-sans pr-5 pl-2 py-2 bg-highlight-darker rounded-full flex items-center gap-3 text-letter transition-all hover:shadow-[0_0_25px_rgba(66,00,00,1.3)]'>
+                                <span className='bg-letter text-highlight-darker rounded-full w-7 md:w-8 h-7 md:h-8 flex items-center justify-center'><MdDownload size={18} /></span>
                                 DOWNLOAD CV</button>
                             <Link
-                                className='w-full max-w-64 md:w-auto justify-center text-[0.7rem] md:text-[1rem] font-dm-sans pr-5 pl-2 py-2 bg-highlight-darker rounded-full flex items-center gap-3 text-white transition-all hover:shadow-[0_0_25px_rgba(66,00,00,1.3)]'
+                                className='w-full max-w-64 md:w-auto justify-center text-[0.7rem] md:text-[1rem] font-dm-sans pr-5 pl-2 py-2 bg-highlight-darker rounded-full flex items-center gap-3 text-letter transition-all hover:shadow-[0_0_25px_rgba(66,00,00,1.3)]'
                                 href='/contact'
                             >
-                                <span className="bg-white text-highlight-darker rounded-full w-7 md:w-8 h-7 md:h-8 flex items-center justify-center">
+                                <span className="bg-letter text-highlight-darker rounded-full w-7 md:w-8 h-7 md:h-8 flex items-center justify-center">
                                     <FaArrowRight size={14} />
                                 </span>
                                 ENTRE EM CONTATO
