@@ -46,9 +46,13 @@ const AboutMe = () => {
                         </div>
 
                         <div className='mt-5 flex flex-col md:flex-row items-center md:justify-start gap-2 md:gap-4'>
-                            <button className='w-full max-w-64 md:w-auto justify-center text-[0.7rem] md:text-[1rem] font-dm-sans pr-5 pl-2 py-2 bg-highlight-darker rounded-full flex items-center gap-3 text-letter transition-all hover:shadow-[0_0_25px_rgba(66,00,00,1.3)]'>
-                                <span className='bg-letter text-highlight-darker rounded-full w-7 md:w-8 h-7 md:h-8 flex items-center justify-center'><MdDownload size={18} /></span>
-                                DOWNLOAD CV</button>
+                            <a href="/curriculo.pdf" target='_blank' className='cursor-pointer'>
+                                <button className='cursor-pointer w-full max-w-64 md:w-auto justify-center text-[0.7rem] md:text-[1rem] font-dm-sans pr-5 pl-2 py-2 bg-highlight-darker rounded-full flex items-center gap-3 text-letter transition-all hover:shadow-[0_0_25px_rgba(66,00,00,1.3)]'>
+                                    <span className='bg-letter text-highlight-darker rounded-full w-7 md:w-8 h-7 md:h-8 flex items-center justify-center'><MdDownload size={18} />
+                                    </span>
+                                        DOWNLOAD CV
+                                </button>
+                            </a>
                             <Link
                                 className='w-full max-w-64 md:w-auto justify-center text-[0.7rem] md:text-[1rem] font-dm-sans pr-5 pl-2 py-2 bg-highlight-darker rounded-full flex items-center gap-3 text-letter transition-all hover:shadow-[0_0_25px_rgba(66,00,00,1.3)]'
                                 href='/contact'
